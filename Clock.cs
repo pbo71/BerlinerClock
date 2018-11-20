@@ -27,7 +27,6 @@ namespace BerlinClock
 			}
 			else
 			{
-				
 				Minutter1 = time.Minute %5;
 				Minutter5 = time.Minute / 5;
 			}
@@ -36,7 +35,7 @@ namespace BerlinClock
 
 			if (time.Hour %5 == 0)
 			{
-				Hour5 = time.Hour;
+				Hour5 = time.Hour / 5;
 				Hour1 = 0;
 			}
 			else
@@ -62,7 +61,7 @@ namespace BerlinClock
 
 			if (time.Hour % 5 == 0)
 			{
-				Hour5 = time.Hour;
+				Hour5 = time.Hour / 5;
 				Hour1 = 0;
 			}
 			else
